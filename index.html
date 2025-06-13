@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reading Museum Visitor Questionnaire</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+      background-color: #f8f9fa;
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+    }
+    .checkbox-group,
+    .radio-group {
+      margin: 0.5rem 0;
+    }
+    .submit-button {
+      margin-top: 2rem;
+      background-color: #007bff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Reading Museum Visitor Questionnaire</h1>
+  <p>Thank you for taking the time to complete this questionnaire. Your responses will help us improve the visitor experience at Reading Museum.</p>
+
+  <form>
+
+    <label>1. Have you visited Reading Museum before?</label>
+    <div class="radio-group">
+      <input type="radio" name="visited" value="Yes"> Yes
+      <input type="radio" name="visited" value="No"> No
+    </div>
+
+    <label>2. What do you enjoy most about museums?</label>
+    <textarea rows="3" name="enjoy_most"></textarea>
+
+    <label>3. What type of experience would encourage you to return?</label>
+    <textarea rows="3" name="encourage_return"></textarea>
+
+    <label>4. Which of the following would interest you?</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="interest" value="Behind-the-scenes tours"> Behind-the-scenes tours<br>
+      <input type="checkbox" name="interest" value="Interactive workshops"> Interactive workshops<br>
+      <input type="checkbox" name="interest" value="VR/AR experiences"> VR/AR historical experiences<br>
+      <input type="checkbox" name="interest" value="Evening events"> Evening events with live talks<br>
+      <input type="checkbox" name="interest" value="Family trails"> Family trails or treasure hunts
+    </div>
+
+    <label>5. How much would you be willing to pay for a premium experience?</label>
+    <select name="price_range">
+      <option value="0">£0 (Free only)</option>
+      <option value="1-5">£1–5</option>
+      <option value="6-10">£6–10</option>
+      <option value="11-20">£11–20</option>
+      <option value="20+">£20+</option>
+    </select>
+
+    <label>6. What age group are you in?</label>
+    <select name="age_group">
+      <option value="Under 16">Under 16</option>
+      <option value="16–24">16–24</option>
+      <option value="25–34">25–34</option>
+      <option value="35–44">35–44</option>
+      <option value="45–54">45–54</option>
+      <option value="55–64">55–64</option>
+      <option value="65+">65+</option>
+    </select>
+
+    <label>7. How do you usually hear about museum events or activities?</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="source" value="Social media"> Social media<br>
+      <input type="checkbox" name="source" value="Website"> Museum website<br>
+      <input type="checkbox" name="source" value="School"> School or educational group<br>
+      <input type="checkbox" name="source" value="Friends"> Friends or family<br>
+      <input type="checkbox" name="source" value="Leaflets"> Posters/leaflets<br>
+      <input type="checkbox" name="source" value="Other"> Other
+    </div>
+
+    <label>8. What types of themes or exhibitions interest you the most?</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="themes" value="Local history"> Local history<br>
+      <input type="checkbox" name="themes" value="Art and design"> Art and design<br>
+      <input type="checkbox" name="themes" value="Archaeology"> Archaeology<br>
+      <input type="checkbox" name="themes" value="Science and nature"> Science and nature<br>
+      <input type="checkbox" name="themes" value="Children's activities"> Children's/family activities<br>
+      <input type="checkbox" name="themes" value="Other"> Other
+    </div>
+
+    <label>9. How likely are you to recommend Reading Museum to others?</label>
+    <div class="radio-group">
+      <input type="radio" name="recommend" value="Very likely"> Very likely
+      <input type="radio" name="recommend" value="Likely"> Likely
+      <input type="radio" name="recommend" value="Neutral"> Neutral
+      <input type="radio" name="recommend" value="Unlikely"> Unlikely
+      <input type="radio" name="recommend" value="Very unlikely"> Very unlikely
+    </div>
+
+    <label>10. What would improve your overall experience at Reading Museum?</label>
+    <textarea rows="4" name="improvements"></textarea>
+
+    <br>
+    <button type="submit" class="submit-button">Submit</button>
+
+  </form>
+</body>
+</html>
